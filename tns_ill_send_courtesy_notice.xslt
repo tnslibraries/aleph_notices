@@ -199,7 +199,7 @@ According to our records, you have materials from other libraries that are about
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Do not reply to this email message.  If you have lost or damaged the material or have additional questions or concerns, please contact the New School Libraries Access and User Services department.'"/>
+       <xsl:with-param name="line" select="'Please contact the Access and User Services with E-ZBorrow questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>
