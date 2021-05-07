@@ -196,7 +196,7 @@ We have attempted to contact you several times about returning this library mate
     </xsl:call-template>
 
 <p>
-Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a> | Phone: <a href="tel:212-229-5307" | SMS: <a href="sms:+16464806309">646-480-6309</a>
+Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
 </p>
 
 
