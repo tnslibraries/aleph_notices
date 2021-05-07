@@ -175,7 +175,7 @@
 	<pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-We have attempted to contact you several times about returning this EZborrow material, but we have not received the item(s).  Since we have not heard from you about the items listed below, we will assume they are lost. We are sending you a bill so you can pay for the replacement of the material. If you have the material, you may return it and discuss a reduced fine for the outstanding materials with New School Library staff.  See below for different options to return the material. 
+We have attempted to contact you several times about returning this library material, but we have not received the item(s).  Since we have not heard from you about the items listed below, we will assume they are lost. We are sending you a bill so you can pay for the replacement of the material. If you have the material, you may return it and discuss a reduced fine for the outstanding materials with New School Library staff.  See below for different options to return the material. 
 
  <ul>
   <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
