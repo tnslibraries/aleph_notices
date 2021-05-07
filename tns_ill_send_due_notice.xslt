@@ -32,7 +32,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Time to Return Your Library Materials'"/>
+       <xsl:with-param name="title" select="'Your Inter-Library Loan (ILL) Materials Are Now Due'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -176,18 +176,22 @@
 
 <xsl:template name="reminder_message">
 
-       
-	<pre STYLE="font-size: 12pt; font-family: Arial">
+<pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-According to our records, you have items that are about to become due.
+According to our records, you have materials from other libraries that are now due.
 
- <ul>
-  <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
-  <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
-  <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">library.newschool.edu</a> and selecting 'Renew items' </li>
-  <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
-</ul> 
+<p>If you still need the material, you may be able to renew online. Some items are not renewable and will need to be returned. Please return ILL material to the New School Libraries.</p>
+
+<p>To renew ILL material, please visit:<br />
+<a href="https://ill.library.nyu.edu/illiad/ZMU/">The New School Libraries' Inter-Library Loan Service</a></p>
+
+ <ol>
+  <li>From the menu on the left, click “Request History”.</li>
+  <li>Find the item you wish to renew and click on the Transaction Number or Title.</li>
+  <li>Click “Renew Request” at the top of the screen.</li>
+  <li>If the renewal request was successful, a new due date will appear at the top of the screen </li>
+</ol> 
 </pre>
 
 </xsl:template>
@@ -195,7 +199,7 @@ According to our records, you have items that are about to become due.
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'If you have any questions, please contact us at:'"/>
+       <xsl:with-param name="line" select="'Please contact the Access and User Services with E-ZBorrow questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>
