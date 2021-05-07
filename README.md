@@ -47,7 +47,7 @@ ILL:
 * item_processing_statuses: II
 
 LIB:
-* sublibraries: All Sublibraries
+* sublibraries: All Sublibraries (including NYU consortium sublibraries)
 * item_status: everything except 30, 31 and 36
 * patron_status: 30-43
 * include_only_items_currently_on_loan: Y
