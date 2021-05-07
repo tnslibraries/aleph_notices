@@ -28,3 +28,26 @@ Courtesy notices will go out in the following way M-F:
 * 07:30 ILL, TNSEZB, and Lib due notices 
 * 08:00 ILL, TNSEZB, and Lib courtesy notices
  
+Notice criteria :
+ 
+EZB:
+     sublibraries: TNSFO, TNSOS, TNSGI, TNSSC
+     item_status: 36
+     patron_status: 30-43
+     include_only_items_currently_on_loan:
+     include_all_overdue_items: N for courtesy notices or due notices, Y for overdue 1,2,3 and billed as lost
+     item_processing_statuses: EZ
+ILL:
+     sublibraries: TNSFO, TNSOS, TNSGI, TNSSC
+     item_status: 30, 31
+     patron_status: 30-43
+     include_only_items_currently_on_loan:
+     include_all_overdue_items: N for courtesy notices or due notices, Y for overdue 1,2,3 and billed as lost
+     item_processing_statuses: II
+LIB:
+     sublibraries: All Sublibraries
+     item_status: everything except 30, 31 and 36
+     patron_status: 30-43
+     include_only_items_currently_on_loan: Y
+     include_all_overdue_items: N for courtesy notices or due notices, Y for overdue 1,2,3 and billed as lost
+     item_processing_statuses: --,
