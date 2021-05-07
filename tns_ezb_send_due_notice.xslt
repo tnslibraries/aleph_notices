@@ -32,7 +32,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Your EZBorrow Materials Are Now Due'"/>
+       <xsl:with-param name="title" select="'Time to Return Your EZ-Borrow Library Materials - Due Today'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -180,28 +180,28 @@
 	<pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-According to our records, you have materials from other libraries that are due.
+According to our records, you have E-ZBorrow materials from other libraries that are due today.
 
-<p>The below E-ZBorrow material is about to become due, and cannot be renewed.</p>
+ <ul>
+  <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
+  <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
+  <li>EZ-Borrow items should be returned with the blue bookband on the correct book.</li>
+  <li>If you still need to use the material, place a new request at <a href="https://login.library.nyu.edu/ezborrow/ns">https://login.library.nyu.edu/ezborrow/ns</a></li>
+ </ul>
 
-<p>If you still need to use the material, place a new request at <a href="https://login.library.nyu.edu/ezborrow/ns">https://login.library.nyu.edu/ezborrow/ns</a>
+ <p>For a list of these EZ-Borrow items, please see below.</p>
 
 </pre>
 
 </xsl:template>
 
 <xsl:template name="addrs">
-
-        <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at: questions or concerns at:'"/>
+    <xsl:call-template name="generic-line">
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
     </xsl:call-template>
-
 <p>
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a> | Phone: <a href="tel:212-229-5307" | SMS: <a href="sms:+16464806309">646-480-6309</a>
 </p>
-
-
-
 
 </xsl:template>
 

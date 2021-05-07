@@ -32,7 +32,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Your Inter-Library Loan (ILL) Materials Are Now Overdue'"/>
+       <xsl:with-param name="title" select="'Time to Return Your Inter-Library Loan (ILL) Materials - Overdue'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -176,20 +176,19 @@
 
 <xsl:template name="reminder_message">
 
-<pre STYLE="font-size: 12pt; font-family: Arial">
+       
+  <pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-According to our records, you have materials from other libraries that are now past due.
+<p>According to our records, you have Inter-Library Loan items that are now overdue and may be accruing fines. Please return these items before you are billed for a replacement. If you are finished using them, please return them to any of the New School Libraries.</p>
 
-<p>Please return ILL material to the New School Libraries located at:<br />
-<ul>
-<li>University Center Library
+ <ul>
+  <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
+  <li>Please make sure that all bookbands and/or lending paperwork accompany the correct returned item.</li>
+  <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
+</ul> 
 
-</ul>
-
-
-
-</p>
+<p>For a list of these Inter-Library Loan items, please see below:</p>
 
 </pre>
 
@@ -198,15 +197,12 @@ According to our records, you have materials from other libraries that are now p
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact the Access and User Services with Inter-Library Loan questions or concerns at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with Inter-Library Loan questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a> | Phone: <a href="tel:212-229-5307" | SMS: <a href="sms:+16464806309">646-480-6309</a>
 </p>
-
-
-
 
 </xsl:template>
 

@@ -32,7 +32,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Your Inter-Library Loan (ILL) Materials Are Now Due'"/>
+       <xsl:with-param name="title" select="'Time to Return Your Inter-Library Loan (ILL) Materials - Due Today'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -179,9 +179,9 @@
 <pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-According to our records, you have materials from other libraries that are now due.
+According to our records, you have Inter-Library Loan materials from other libraries that are due today.
 
-<p>If you still need the material, you may be able to renew online. Some items are not renewable and will need to be returned. Please return ILL material to the New School Libraries.</p>
+<p>If you still need the material, you may be able to renew online. Some items are not renewable and will need to be returned. Please return ILL material to the New School Libraries. Bookbands or any lending paperwork should accompany the item when returning.</p>
 
 <p>To renew ILL material, please visit:<br />
 <a href="https://ill.library.nyu.edu/illiad/ZMU/">The New School Libraries' Inter-Library Loan Service</a></p>
@@ -192,6 +192,9 @@ According to our records, you have materials from other libraries that are now d
   <li>Click “Renew Request” at the top of the screen.</li>
   <li>If the renewal request was successful, a new due date will appear at the top of the screen </li>
 </ol> 
+
+<p>For a list of these items, please see below:</p>
+
 </pre>
 
 </xsl:template>
@@ -199,7 +202,7 @@ According to our records, you have materials from other libraries that are now d
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact the Access and User Services with E-ZBorrow questions or concerns at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>

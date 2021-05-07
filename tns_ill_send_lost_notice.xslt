@@ -32,7 +32,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Your Inter-Library Loan (ILL) Materials Are Now Overdue'"/>
+       <xsl:with-param name="title" select="'Time to Return Your inter-Library Loan (ILL) Materials - Billed As Lost'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -176,20 +176,18 @@
 
 <xsl:template name="reminder_message">
 
-<pre STYLE="font-size: 12pt; font-family: Arial">
+  <pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-According to our records, you have materials from other libraries that are now past due.
+We have attempted to contact you several times about returning this EZborrow material, but we have not received the item(s).  Since we have not heard from you about the items listed below, we will assume they are lost. We are sending you a bill so you can pay for the replacement of the material. If you have the material, you may return it and discuss a reduced fine for the outstanding materials with New School Library staff.  See below for different options to return the material. 
 
-<p>Please return ILL material to the New School Libraries located at:<br />
-<ul>
-<li>University Center Library
+ <ul>
+    <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
+  <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
+  <li>Inter-Library Loan items should be returned with the proper bookband/lending paperwork with the correct book.</li>
+</ul> 
 
-</ul>
-
-
-
-</p>
+ <p>For a list of the Inter-Library Loan items in question, please see below.</p>
 
 </pre>
 
@@ -198,7 +196,7 @@ According to our records, you have materials from other libraries that are now p
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact the Access and User Services with Inter-Library Loan questions or concerns at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>

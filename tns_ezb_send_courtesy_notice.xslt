@@ -32,7 +32,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Time to Return Your Library Materials'"/>
+       <xsl:with-param name="title" select="'Time to Return Your EZ-Borrow Library Materials - Due Soon'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -185,9 +185,12 @@ According to our records, you have items that are about to become due.
  <ul>
   <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
   <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
-  <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">library.newschool.edu</a> and selecting 'Renew items' </li>
+  <li>EZ-Borrow items should be returned with the blue bookband on the correct book.</li>
   <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
 </ul> 
+
+ <p>For a list of these EZ-Borrow items, please see below.</p>
+
 </pre>
 
 </xsl:template>
@@ -195,15 +198,12 @@ According to our records, you have items that are about to become due.
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'If you have any questions, please contact us at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a> | Phone: <a href="tel:212-229-5307" | SMS: <a href="sms:+16464806309">646-480-6309</a>
 </p>
-
-
-
 
 </xsl:template>
 

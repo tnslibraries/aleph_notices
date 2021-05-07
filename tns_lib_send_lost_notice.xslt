@@ -56,12 +56,7 @@
  
   </xsl:template>
 
-
-
-
     <!--SECTION-02  (GRID)-->
-
-
 
 <xsl:template name="section-02A">
 	<xsl:call-template name="start-grid"/>
@@ -180,7 +175,7 @@
 	<pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-According to our records, you have items that are about to become due.
+We have attempted to contact you several times about returning this EZborrow material, but we have not received the item(s).  Since we have not heard from you about the items listed below, we will assume they are lost. We are sending you a bill so you can pay for the replacement of the material. If you have the material, you may return it and discuss a reduced fine for the outstanding materials with New School Library staff.  See below for different options to return the material. 
 
  <ul>
   <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
@@ -188,6 +183,8 @@ According to our records, you have items that are about to become due.
   <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">library.newschool.edu</a> and selecting 'Renew items' </li>
   <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
 </ul> 
+
+<p>For a list of the library items in question, please see below.</p>
 </pre>
 
 </xsl:template>
@@ -195,7 +192,7 @@ According to our records, you have items that are about to become due.
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'If you have any questions, please contact us at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
     </xsl:call-template>
 
 <p>
