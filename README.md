@@ -1,4 +1,4 @@
-# aleph_notices
+# New School Patron Communications from Aleph
 
 The following aleph notices are used to email New School patrons daily. 
 
