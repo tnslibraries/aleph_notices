@@ -177,19 +177,17 @@
 <xsl:template name="reminder_message">
 
        
-	<pre STYLE="font-size: 12pt; font-family: Arial">
+  <pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-We have attempted to contact you several times about returning this EZborrow material, but we have not received the item(s).  Since we have not heard from you about the items listed below, we will assume they are lost. We are sending you a bill so you can pay for the replacement of the material. If you have the material, you may return it and discuss a reduced fine for the outstanding materials with New School Library staff.  See below for different options to return the material. 
+According to our records, you have items that are about to become due.
 
  <ul>
-    <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
+  <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
   <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
-  <li>EZ-Borrow items should be returned with the blue bookband on the correct book.</li>
+  <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">https://library.newschool.edu</a> and selecting 'Renew items' </li>
+  <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
 </ul> 
-
- <p>For a list of the EZ-Borrow items in question, please see below.</p>
-
 </pre>
 
 </xsl:template>
