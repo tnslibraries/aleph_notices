@@ -52,4 +52,4 @@ LIB:
 * patron_status: 30-43
 * include_only_items_currently_on_loan: Y
 * include_all_overdue_items: N for courtesy notices or due notices, Y for overdue 1,2,3 and billed as lost
-* item_processing_statuses: --,
+* item_processing_statuses: not in process (except for billed as lost, which would be BL)
