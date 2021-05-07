@@ -2,7 +2,7 @@
 
 The following aleph notices are used to email New School patrons daily. 
 
-#kinds of notices
+# kinds of notices
 
 There are three different types of materials
 
@@ -10,7 +10,7 @@ There are three different types of materials
 * Inter-Library Loan (ILL)
 * Library materials
 
-#levels of notices
+# levels of notices
 
 * courtesy notice = -7 days before due date
 * due date = day of due date
@@ -19,11 +19,11 @@ There are three different types of materials
 * overdue3 = +60 days after due date
 * billed as lost = +90 days after due date
 
-#order of notices
+# order of notices
 
 As of 5/6, the only three services to be turned on are courtesy, due date and overdue1.
 
-#schedule of notices
+# schedule of notices
 
 Courtesy notices will go out in the following way M-F:
 
@@ -34,7 +34,7 @@ Courtesy notices will go out in the following way M-F:
 * 07:30 ILL, TNSEZB, and Lib due notices 
 * 08:00 ILL, TNSEZB, and Lib courtesy notices
  
-#criteria of notices
+# criteria of notices
 
 EZB:
 * sublibraries: TNSFO, TNSOS, TNSGI, TNSSC
