@@ -15,9 +15,9 @@ There are three different types of materials
 * courtesy notice = -7 days before due date
 * due date = day of due date
 * overdue1 = +07 days after due date
-* overdue2 = +30 days after due date
-* overdue3 = +60 days after due date
-* billed as lost = +90 days after due date
+* overdue2 = +30 days after due date (suspended)
+* overdue3 = +60 days after due date (suspended)
+* billed as lost = +90 days after due date (suspended)
 
 ## order of notices
 
