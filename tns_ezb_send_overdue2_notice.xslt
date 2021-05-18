@@ -180,7 +180,7 @@
 	<pre STYLE="font-size: 12pt; font-family: Arial">
 Hello <xsl:value-of select="printout/section-01/patron_name"/>,
 
-<p>According to our records, you have items that are now overdue and may be accruing fines. Please return or renew these items immediately. If you are finished using them, please return them to any of the New School Libraries.</p>
+<p>According to our records, you have items that are now severely overdue and may be accruing fines. Please return or renew these items immediately. If you are finished using them, please return them to any of the New School Libraries.</p>
 
 <p>If these items have been recalled by another patron, the fines will accrue at an increased rate. The item will also have a shortened time before you are billed for replacement.</p>
 
