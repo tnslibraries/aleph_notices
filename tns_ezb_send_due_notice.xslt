@@ -29,7 +29,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Time to Return Your EZBorrow Library Materials - Due Today'"/>
+       <xsl:with-param name="title" select="'Time to Return Your E-ZBorrow Library Materials - Due Today'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -177,18 +177,18 @@
   <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
   <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
   <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">https://library.newschool.edu</a> and selecting 'Renew items' </li>
-  <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
+  <li>E-ZBorrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
 </ul> 
 
   <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
   
-  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these EZBorrow library items, please see below.</p>
+  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these E-ZBorrow library items, please see below.</p>
 </xsl:template>
 
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns about E-ZBorrow at:'"/>
     </xsl:call-template>
 <p STYLE="font-family: Arial">
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
