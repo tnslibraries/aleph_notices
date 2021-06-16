@@ -20,14 +20,11 @@
     <xsl:call-template name="grid-open"/>
     <xsl:for-each select="//section-02">
        
-<!--  <xsl:sort select="./z30-sub-library"/> -->
+<xsl:sort select="./z30-sub-library"/>
        <xsl:call-template name="section-02A"/>
     </xsl:for-each>
-
-
 </xsl:template>
-
-
+  
     <!-- START DATA -->
 
 <xsl:template name="header">
@@ -36,12 +33,14 @@
     </xsl:call-template>
 </xsl:template>
 
-
+<xsl:template name="patronName">
+  <!-- <xsl:value-of select="/printout/section-01/z302-name"/> -->
+  <xsl:value-of select="substring-after(/printout/section-01/z302-name,', ')" />
+</xsl:template>
 <!--SECTION-01  (FREE)-->
 
 <xsl:template name="section-01">
-
-
+  
    <xsl:choose>
 <!--     <xsl:when test="substring(./z302-delinq-n-1,1,9) = 'Email add'">  -->
      <xsl:when test="./z302-delinq-1 = '01'">
@@ -56,12 +55,7 @@
  
   </xsl:template>
 
-
-
-
     <!--SECTION-02  (GRID)-->
-
-
 
 <xsl:template name="section-02A">
 	<xsl:call-template name="start-grid"/>
@@ -176,22 +170,19 @@
 
 <xsl:template name="reminder_message">
 
-       
-  <pre STYLE="font-size: 12pt; font-family: Arial">
-Hello <xsl:value-of select="printout/section-01/patron_name"/>,
+  <p STYLE="font-family: Arial">Hello <xsl:call-template name="patronName"/>,</p>
 
-According to our records, you have items that are about to become due.
-
- <ul>
+  <p STYLE="font-family: Arial">According to our records, you have items that are about to become due.</p>
+  <ul style="font-family: Arial;padding-top:0px;margin-top:0px;padding-bottom:0px;margin-bottom:0px;">
   <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
   <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
   <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">https://library.newschool.edu</a> and selecting 'Renew items' </li>
   <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
 </ul> 
-</pre>
 
-<p>For a list of these library items, please see below.</p>
-
+  <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
+  
+  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these library items, please see below.</p>
 </xsl:template>
 
 <xsl:template name="addrs">
@@ -199,13 +190,9 @@ According to our records, you have items that are about to become due.
         <xsl:call-template name="generic-line">
        <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns at:'"/>
     </xsl:call-template>
-
-<p>
+<p STYLE="font-family: Arial">
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
 </p>
-
-
-
 
 </xsl:template>
 
