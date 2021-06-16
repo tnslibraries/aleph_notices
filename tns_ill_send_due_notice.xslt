@@ -188,7 +188,7 @@
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with Inter-Library Loan questions or concerns at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with Inter-Library Loan (ILL) questions or concerns at:'"/>
     </xsl:call-template>
 <p STYLE="font-family: Arial">
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
