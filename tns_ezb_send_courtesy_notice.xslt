@@ -29,7 +29,7 @@
 
 <xsl:template name="header">
     <xsl:call-template name="header-gen">
-       <xsl:with-param name="title" select="'Time to Return Your EZBorrow Library Materials - Due Soon'"/>
+       <xsl:with-param name="title" select="'Time to Return Your E-ZBorrow Library Materials - Due Soon'"/>
     </xsl:call-template>
 </xsl:template>
 
@@ -182,13 +182,13 @@
 
   <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
   
-  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these EZBorrow library items, please see below.</p>
+  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these E-ZBorrow library items, please see below.</p>
 </xsl:template>
 
 <xsl:template name="addrs">
 
         <xsl:call-template name="generic-line">
-       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns about EZBorrow materials at:'"/>
+       <xsl:with-param name="line" select="'Please contact The New School Libraries staff with questions or concerns about E-ZBorrow materials at:'"/>
     </xsl:call-template>
 <p STYLE="font-family: Arial">
 Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
