@@ -182,7 +182,7 @@
 
   <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
   
-  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these library items, please see below.</p>
+  <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these EZBorrow library items, please see below.</p>
 </xsl:template>
 
 <xsl:template name="addrs">
