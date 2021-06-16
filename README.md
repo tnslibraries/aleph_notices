@@ -6,7 +6,7 @@ The following aleph notices are used to email New School patrons daily.
 
 There are three different types of materials
 
-* EZ-Borrow
+* E-ZBorrow
 * Inter-Library Loan (ILL)
 * Library materials
 
