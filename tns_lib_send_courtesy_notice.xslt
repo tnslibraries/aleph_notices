@@ -177,7 +177,7 @@
   <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
   <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
   <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">https://library.newschool.edu</a> and selecting 'Renew items' </li>
-  <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
+  <li>E-ZBorrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
 </ul> 
 
   <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
