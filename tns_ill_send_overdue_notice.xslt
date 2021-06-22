@@ -12,24 +12,27 @@
     
     <!--section-01 (FREE)-->
     
-    <xsl:for-each select="//section-01">
+    <xsl:for-each select="/printout/section-01">
       <xsl:call-template name="section-01"/>
     </xsl:for-each>
     
     <!--section-02 (GRID)-->
     <xsl:call-template name="grid-open"/>
-    <xsl:for-each select="//section-02">
+    <xsl:for-each select="/printout/section-02">
       
-      <xsl:sort select="./z30-sub-library"/>
+      <!--  <xsl:sort select="./z30-sub-library"/> -->
       <xsl:call-template name="section-02A"/>
     </xsl:for-each>
+    
+    
   </xsl:template>
+  
   
   <!-- START DATA -->
   
   <xsl:template name="header">
     <xsl:call-template name="header-gen">
-      <xsl:with-param name="title" select="'Time to Return Your Inter-Library Loan (ILL) Materials - Overdue'"/>
+      <xsl:with-param name="title" select="'Time to Return Your Inter-Library Loan (ILL) Materials - Billed As Lost'"/>
     </xsl:call-template>
   </xsl:template>
   
@@ -42,6 +45,7 @@
   <!--SECTION-01  (FREE)-->
   
   <xsl:template name="section-01">
+    
     
     <xsl:choose>
       <!--     <xsl:when test="substring(./z302-delinq-n-1,1,9) = 'Email add'">  -->
@@ -56,7 +60,6 @@
     </xsl:choose>
     
   </xsl:template>
-  
   
   <!--SECTION-02  (GRID)-->
   
@@ -175,17 +178,18 @@
     
     <p STYLE="font-family: Arial">Hello <xsl:call-template name="patronName"/>,</p>
     
-    <p STYLE="font-family: Arial">According to our records, you have items that are overdue and may be accruing fines.</p>
+    <p STYLE="font-family: Arial">According to our records, we have been trying to contact you and we now consider items on your account 'lost'.  You will be responsible for replacement fees, fines and other costs.  Please contact us as soon as possible to resolve these outstanding Inter-Library Loan (ILL) issues.</p>
+    
     <ul style="font-family: Arial;padding-top:0px;margin-top:0px;padding-bottom:0px;margin-bottom:0px;">
       <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
       <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
       <li>View a list of your checked out items and renew eligible items by visiting <a href="https://library.newschool.edu">https://library.newschool.edu</a> and selecting 'Renew items' </li>
-      <li>E-ZBorrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
-    </ul> 
+      <li>EZ Borrow, Inter-Library Loan and some other items cannot be renewed. Please return these by following the instructions above. </li>
+    </ul>
     
     <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
     
-    <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these overdue Inter-Library Loan (ILL) items, please see below.</p>
+    <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these lost Inter-Library Loan (ILL) items, please see below.</p>
   </xsl:template>
   
   <xsl:template name="addrs">
@@ -197,6 +201,9 @@
     <p>
       Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
     </p>
+    
+    
+    
     
   </xsl:template>
   
