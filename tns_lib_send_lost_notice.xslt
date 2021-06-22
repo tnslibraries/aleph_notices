@@ -12,13 +12,13 @@
         
         <!--section-01 (FREE)-->
         
-        <xsl:for-each select="//section-01">
+        <xsl:for-each select="/printout/section-01">
             <xsl:call-template name="section-01"/>
         </xsl:for-each>
         
         <!--section-02 (GRID)-->
         <xsl:call-template name="grid-open"/>
-        <xsl:for-each select="//section-02">
+        <xsl:for-each select="/printout/section-02">
             
             <!--  <xsl:sort select="./z30-sub-library"/> -->
             <xsl:call-template name="section-02A"/>
