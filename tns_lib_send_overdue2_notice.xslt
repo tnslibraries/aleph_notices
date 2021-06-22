@@ -29,7 +29,7 @@
     
     <xsl:template name="header">
         <xsl:call-template name="header-gen">
-            <xsl:with-param name="title" select="'Time to Return Your Library Materials - Severely Overdue'"/>
+            <xsl:with-param name="title" select="'Time to Return Your Library Materials - Overdue'"/>
         </xsl:call-template>
     </xsl:template>
     
@@ -175,7 +175,7 @@
         
         <p STYLE="font-family: Arial">Hello <xsl:call-template name="patronName"/>,</p>
         
-        <p STYLE="font-family: Arial">According to our records, you have items that are severely overdue and are accruing fines.</p>
+        <p STYLE="font-family: Arial">According to our records, you have library items that are overdue and may be accruing fines.</p>
         <ul style="font-family: Arial;padding-top:0px;margin-top:0px;padding-bottom:0px;margin-bottom:0px;">
             <li>Library materials may be returned to book drops located in the lobbies of the University Center (63 Fifth Avenue) and Arnhold Hall (55 West 13th Street) when the buildings are open. See detailed building hours here:<br /><a href="https://www.newschool.edu/about/campus-information/building-hours/">https://www.newschool.edu/about/campus-information/building-hours/</a></li>
             <li>If you are in the US but unable to return your books on campus, please email <a href="mailto:libezb@newschool.edu">libezb@newschool.edu</a> so that we can provide you with a shipping label.</li>
@@ -185,7 +185,7 @@
         
         <p STYLE="font-family: Arial"><xsl:call-template name="addrs"/></p>
         
-        <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these severely overdue library items, please see below.</p>
+        <p STYLE="font-family: Arial;margin-bottom:0px;padding-bottom:0px;">For a list of these overdue library items, please see below.</p>
     </xsl:template>
     
     <xsl:template name="addrs">
@@ -197,6 +197,9 @@
         <p>
             Email: <a href="mailto:libhelp@newschool.edu">libhelp@newschool.edu</a> | Chat: <a href="https://answers.library.newschool.edu">Ask Us</a>
         </p>
+        
+        
+        
         
     </xsl:template>
     
