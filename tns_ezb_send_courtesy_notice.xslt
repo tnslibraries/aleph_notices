@@ -29,7 +29,7 @@
   
   <xsl:template name="header">
     <xsl:call-template name="header-gen">
-      <xsl:with-param name="title" select="'Time to Return Your EZ-Borrow Library Materials - Due Soon'"/>
+      <xsl:with-param name="title" select="'Time to Return Your EZ-Borrow Library Materials - Due Soon!'"/>
     </xsl:call-template>
   </xsl:template>
   
